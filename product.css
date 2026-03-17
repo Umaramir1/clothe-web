@@ -286,16 +286,173 @@ button:hover {
   padding-left: 5px;
 }
 
-/* Responsive Design */
+/* Responsive Design - Tablets */
 @media (max-width: 768px) {
   .nav {
-    padding: 15px 20px;
+    padding: 12px 20px;
     flex-wrap: wrap;
+  }
+
+  .nav .left-nav h2 {
+    font-size: 20px;
   }
 
   .nav .right-nav {
     flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .nav .right-nav button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  header {
+    padding: 40px 20px;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  .products {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card img {
+    height: 150px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+}
+
+/* Responsive Design - Mobile Phones */
+@media (max-width: 480px) {
+  .nav {
+    padding: 10px 15px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .nav .left-nav {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .nav .left-nav h2 {
+    font-size: 18px;
+  }
+
+  .nav .right-nav {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 5px;
+  }
+
+  .nav .right-nav button {
+    padding: 6px 10px;
+    font-size: 11px;
+    flex: 1;
+    min-width: 75px;
+  }
+
+  .nav-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  header {
+    padding: 30px 15px;
+  }
+
+  header h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  header p {
+    font-size: 14px;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+    padding: 20px 15px;
+    gap: 15px;
+  }
+
+  .card {
+    padding: 12px;
+  }
+
+  .card h3 {
+    font-size: 15px;
+    margin: 8px 0;
+  }
+
+  .card img {
+    height: 120px;
+  }
+
+  .price {
+    font-size: 18px;
+    margin: 8px 0;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .footer-section h3,
+  .footer-section h4 {
+    font-size: 14px;
+  }
+
+  .footer-section p,
+  .footer-section ul {
+    font-size: 12px;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 6px;
   }
 
   .nav .right-nav button {
